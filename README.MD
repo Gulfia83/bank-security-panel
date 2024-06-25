@@ -1,6 +1,6 @@
 # Bank security console
 
-[Russian](RU_README.md)
+[Russian](RU_README.MD)
 
 ## Description
 
