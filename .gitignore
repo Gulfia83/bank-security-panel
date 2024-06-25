@@ -26,6 +26,7 @@ share/python-wheels/
 *.egg
 .pythonlibs
 .upm
+.pyproject.toml
 MANIFEST
 
 # PyInstaller
