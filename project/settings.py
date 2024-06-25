@@ -1,26 +1,24 @@
-from dotenv import load_dotenv
 import os
 from environs import Env
 
 
 env = Env()
 env.read_env()
-load_dotenv()
 
 DATABASES = {
     'default': {
-        'ENGINE': env('DB_ENGINE'),
-        'HOST': env('DB_HOST'),
-        'PORT': env('DB_PORT'),
-        'NAME': env('DB_NAME'),
-        'USER': env('DB_USER'),
-        'PASSWORD': env('DB_PASSWORD'),
+        'ENGINE': env.str('DB_ENGINE'),
+        'HOST': env.url('DB_HOST'),
+        'PORT': env.int('DB_PORT'),
+        'NAME': env.str('DB_NAME'),
+        'USER': env.str('DB_USER'),
+        'PASSWORD': env.str('DB_PASSWORD'),
     }
 }
 
 INSTALLED_APPS = ['datacenter']
 
-SECRET_KEY = env('SEKRET_KEY')
+SECRET_KEY = env.str('SECRET_KEY')
 
 DEBUG = env.bool('DEBUG', default=False)
 
