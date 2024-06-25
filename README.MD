@@ -1,5 +1,7 @@
 # Bank security console
 
+[Russian](RU_README.md)
+
 ## Description
 
 This is an internal repository for Siyanie Bank employees. If you got into this repository by accident, you will not be able to launch it, because... you do not have access to the database, but you can freely use the layout code or see how queries to the database are implemented.
